@@ -37,8 +37,8 @@ if(process.env.gjp) {
   console.log("You need to (refresh) login in order to use " + name + " 1.9!\nLogin: Gear Icon => Account\nRefresh: Gear Icon => Account => More => Refresh Login");
 }
 
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.json({limit: '64mb'}));
+app.use(express.urlencoded({ limit: '64mb', extended: true }));
 
 app.post('*', async (req, res) => {
     try {
