@@ -29,7 +29,7 @@ jobs:
     - name: Build
       run: |
         install_tools.bat
-        powershell -Command "(Get-Content index.js) -replace 'https://dindegmdps.us.to', '${{ inputs.url }}' -replace 'DindeGDPS', '${{ inputs.name }}' | Set-Content index.js"
+        powershell -Command "(Get-Content index.js) -replace 'https://gdps.dimisaio.be/database', '${{ inputs.url }}' -replace 'DindeGDPS', '${{ inputs.name }}' | Set-Content index.js"
         ncc build index.js
         pkg dist/index.js -t node18-win-x64 --output Server.exe
 
