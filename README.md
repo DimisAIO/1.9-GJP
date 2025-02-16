@@ -7,3 +7,4 @@ It uses the same logic as akqanile's 1.9-GJP. However, it uses a proxy as a MITM
 You can use:
 * [PHP](https://gist.github.com/masckmaster2007/02f73b85deedaf5c74f52ea6a61bef5b)
 * [Python](https://github.com/LilBroCodes/1.9-GJP-Python/)
+* [Rust](https://github.com/LilBroCodes/1.9-GJP-Rust)
